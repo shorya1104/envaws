@@ -5,7 +5,6 @@ const path       = require('path');
 const cors       = require('cors');
 const logger     = require('logger').createLogger('development.log')
 // @Init App
-
 const app = express();
 app.set('deviceKey', 'Prem_Maurya');
 const http = require('http').Server(app);
@@ -15,7 +14,6 @@ require("./DBConnection");
 // @Route Define
 var area = require('./routes/areaManage')(io);
 var User = require('./routes/EnvDevice');
-
 app.use(bodyParser.json({ limit: '500000mb' }));
 app.use(bodyParser.urlencoded({ limit: '500000mb', extended: true, parameterLimit: 10000000000 }));
 
