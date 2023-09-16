@@ -6,3 +6,5 @@ sudo docker pull shoryasngh/env:latest
 
 #run docker container 
 sudo docker container run -d -p 3000:3000 --name ENV shoryasngh/env:latest
+
+echo "running"changes
